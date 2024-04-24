@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Original Webpage</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"> <!-- This is the link to the styles.css file which contains the header style size, fonts etc -->
+</head>
+<body>
+
+    <header>
+        <h1>Ski Snowboard Scotland</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a> <!-- navigation links-->
+        <a href="about.html">About Us</a>
+        <a href="trip.html">Trip Questionnaire</a>
+        <a href="pistemaps.html">Piste Maps</a>
+        <a href="blog.html">Blog</a>
+        <a href="tutorials.html">Tutorials</a>
+    </nav>
+    <h1>Snowsports Trip Questionnaire</h1>
+
+    <div id="questionnaire"> <!--This is the questionnaire which incorporates JavaScript-->
+
+        <h2>Question 1: Where would you like to go for the 2024 snowsports trip?</h2>
+        <input type="radio" name="destination" value="France"> France<br> <!-- states that a radio button is pressed, "destination" is the variable and "France" is the value", these change depending on the value below-->
+        <input type="radio" name="destination" value="Austria"> Austria<br>
+        <input type="radio" name="destination" value="Bulgaria"> Bulgaria<br>
+        <input type="radio" name="destination" value="Italy"> Italy<br>
+
+        <h2>Question 2: How long do you want the trip to be?</h2>
+        <input type="radio" name="duration" value="4 days"> 4 days<br>
+        <input type="radio" name="duration" value="7 days"> 7 days<br>
+        <input type="radio" name="duration" value="Rest of my life"> The rest of my life!<br>
+
+        <h2>Question 3: What is your budget for the trip?</h2>
+        <input type="radio" name="budget" value="< £800"> &lt; £800<br>
+        <input type="radio" name="budget" value=">£800 but < £1000"> &gt; £800 but &lt; £1000<br>
+        <input type="radio" name="budget" value=">£1000"> &gt; £1000<br>
+
+        <h2>Question 4: Would you rather stay in?</h2>
+        <input type="radio" name="accommodation" value="Hotel"> Hotel<br>
+        <input type="radio" name="accommodation" value="Chalet"> Chalet<br>
+        <input type="radio" name="accommodation" value="AirBnB"> AirBnB<br>
+        <input type="radio" name="accommodation" value="Just stay in the bar!"> Just stay in the bar!<br>
+
+        <button onclick="submitAnswers()">Submit</button> <!-- The sumbitAnswers() function stores the answers in the variable "answers" when the submit button is pressed -->
+    </div>                                                
+    
+    <div id="answers"></div> 
+
+    <script> 
+        function submitAnswers() { 
+            const answers = {
+                destination: document.querySelector('input[name="destination"]:checked').value,
+                duration: document.querySelector('input[name="duration"]:checked').value,
+                budget: document.querySelector('input[name="budget"]:checked').value,
+                accommodation: document.querySelector('input[name="accommodation"]:checked').value
+            };   
+            
+            displayAnswers(answers);  /*the displayanswers() function displays the results*/
+            
+            
+            document.getElementById('answers').scrollIntoView({ behavior: 'smooth' }); /*this allows the page to scroll to see the results*/
+        }
+
+        function displayAnswers(answers) {
+            const answersDiv = document.getElementById('answers');
+            answersDiv.innerHTML = "<h2>Your Answers:</h2>";
+            for (const [question, answer] of Object.entries(answers)) {
+                answersDiv.innerHTML += `<p><strong>${question}:</strong> ${answer}</p>`;
+            }
+        }
+    </script>
+
+<div class="footer"> <!-- footer class contains all the css styles for the footer, colour etc-->
+    <a href="https://www.facebook.com/groups/1102886316493959" target="_blank">Facebook</a>
+    <a href="https://twitter.com/" target="_blank">Twitter</a>
+    <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+</div>
+
+    
+    <div style="height: 200px;"> <!-- This reduces the whitepspace at he bottom of the page-->
+    </div> 
+</body>
+</html>

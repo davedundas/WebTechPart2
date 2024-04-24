@@ -1,0 +1,19 @@
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+img {
+    float: right;
+    margin: 0 0 20px 20px; /* Adjust margin as needed */
+    transform: rotate(45deg); /* Rotate the image by 45 degrees */
+}
+
+.rotated-image {
+    transform: rotate(25deg); /* Rotates the inputed image by 45 degrees */
+    float: right;
+    margin-left: 20px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+}
