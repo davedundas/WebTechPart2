@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Original Webpage</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"> <!-- This is the link to the styles.css file-->
+
+    <style>  /* inline styling to show other option */
+        .video-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+        .video {
+            text-align: center;
+        }
+        .video img {
+            max-width: 100%;
+            height: auto;
+        }
+        .body-text p,
+        .video-container P {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 22px; 
+            line-height: 1.5; 
+            color: #333; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tutorials! Never Stop Learning!</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a> <!-- navigation links-->
+        <a href="about.html">About Us</a>
+        <a href="trip.html">Trip Questionnaire</a>
+        <a href="pistemaps.html">Piste Maps</a>
+        <a href="blog.html">Blog</a>
+        <a href="tutorials.html">Tutorials</a>
+    </nav>
+    <main>
+        <div class="body-text"> <!--centers the following text in the centre-->
+        <center><h2>Hi Guys, below are some links to tips and tricks to improve your boarding. </p>
+            These are some really useful videos from contributers like Malcolm Moore</h2></center>
+        </div>
+        <div class="video-container"> <!--inplements the above style code to create the grid for videos-->
+            <div class="video"> <!--centers the video inthe middle of the box-->
+                <a href="https://www.youtube.com/watch?v=w9KuTkeNQfY"><!-- anchor link to external video-->
+                    <img src="https://img.youtube.com/vi/w9KuTkeNQfY/0.jpg" alt="How to improve your Snowboarding"> <!--creates the thumbnail-->
+                </a>
+                <p>How to improve your Snowboarding</p> <!--explanation title under the video thumbnail-->
+            </div>
+            <div class="video"><!--centers the video inthe middle of the box-->
+                <a href="https://www.youtube.com/watch?v=BNbDR57qf8M&t=28s"> <!-- anchor link to external video-->
+                    <img src="https://img.youtube.com/vi/BNbDR57qf8M/0.jpg" alt="How to carve better"> <!--creates the thumbnail-->
+                </a>
+                <p>How to carve better</p>
+            </div>
+            <div class="video">
+                <a href="https://www.youtube.com/watch?v=3GHU3DN1v4Q">
+                    <img src="https://img.youtube.com/vi/3GHU3DN1v4Q/0.jpg" alt="Beginner Tips">
+                </a>
+                <p>Beginner Tips</p>
+            </div>
+            <div class="video">
+                <a href="https://www.youtube.com/watch?v=JCjmmlvVnc8&t=39s">
+                    <img src="https://img.youtube.com/vi/JCjmmlvVnc8/0.jpg" alt="Top 10 Tips according to Board Archive!">
+                </a>
+                <p>Top 10 Tips according to Board Archive!</p>
+            </div>
+            <div class="video">
+                <a href="https://www.youtube.com/watch?v=Iofrv4rxJcY">
+                    <img src="https://img.youtube.com/vi/Iofrv4rxJcY/0.jpg" alt="Learn from your mistakes">
+                </a>
+                <p>Learn from your mistakes</p>
+            </div>
+            <div class="video">
+                <a href="https://www.youtube.com/watch?v=ypJ0NzHoKM8">
+                    <img src="https://img.youtube.com/vi/ypJ0NzHoKM8/0.jpg" alt="Learn how to board on a cat track">
+                </a>
+                <p>Learn how to board on a cat track</p>
+            </div>
+            <div class="video">
+                <a href="https://www.youtube.com/watch?v=FyZ1RWKJSug">
+                    <img src="https://img.youtube.com/vi/FyZ1RWKJSug/0.jpg" alt="Linking your turns">
+                </a>
+                <p>Learn how to board on a cat track</p>
+            </div>
+            <div class="video">
+                <a href="https://www.youtube.com/watch?v=xAvBRqjyyjo">
+                    <img src="https://img.youtube.com/vi/xAvBRqjyyjo/0.jpg" alt="S turns">
+                </a>
+                <p>Learn how to board on a cat track</p>
+            </div>
+            <div class="video">
+                <a href="https://www.youtube.com/watch?v=HgT8_RRJi3c">
+                    <img src="https://img.youtube.com/vi/HgT8_RRJi3c/0.jpg" alt="Tips for ateep terrain">
+                </a>
+                <p>Learn how to board on a cat track</p>
+            </div>
+        </div>
+    </main>
+    <div class="footer"> <!-- footer class contains all the css styles for the footer, colour etc-->
+        <a href="https://www.facebook.com/groups/1102886316493959" target="_blank">Facebook</a>
+        <a href="https://twitter.com/" target="_blank">Twitter</a>
+        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+    </div>
+    <div style="height: 100px;"></div> <!-- This controls the amount of whitespace allowed through scrolling -->
+</body>
+</html>

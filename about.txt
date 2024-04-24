@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Original Webpage</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"> <!-- This is the link to the styles.css file which contains the header style size, fonts etc -->
+</head>
+<body>
+
+        <header>
+            <h1>Ski Snowboard Scotland</h1>
+        </header>
+    
+        <nav>
+            <a href="index.html">Home</a> <!-- navigation links-->
+            <a href="about.html">About Us</a>
+            <a href="trip.html">Trip Questionnaire</a>
+            <a href="pistemaps.html">Piste Maps</a>
+            <a href="blog.html">Blog</a>
+            <a href="tutorials.html">Tutorials</a>
+        </nav>
+    
+        <div class="text-container"> <!-- sets the size ofthe text container, positon and fomt etc-->
+            <div class="content"> <!-- allows the page to scroll depending on the amount of content on the page-->
+                <div class="box"> <!-- sets the colour and margin from the top of the page-->
+
+                    <h2>About us</h2>
+
+                    <p>Welcome to the exhilarating world of Snowboard Scotland! Our community is a vibrant blend of snow sports enthusiasts 
+                       of all ages and abilities, united by our shared passion for shredding the slopes and embracing the thrill of 
+                       snowboarding. Whether you're a seasoned rider or just starting out, there's a place for you in our inclusive and 
+                       welcoming group.</p>
+                    <p>At Snowboard Scotland, we believe in exploring the snowy landscapes both at home and abroad. From the stunning 
+                        mountains of Scotland to the iconic resorts across Europe and beyond, we embark on epic adventures to experience 
+                        the best that snowboarding has to offer. Our trips range from adrenaline-fueled sessions on the slopes to 
+                        laid-back rides through scenic trails, catering to every rider's preferences and skill level.</p>
+                    <p>But it's not just about the snowboarding - we're also all about the après-ski scene! After a thrilling day on the 
+                        mountain, we love to unwind and socialize with like-minded individuals. Whether it's gathering around a cozy fire 
+                        with hot cocoa or hitting the town for some après-ski parties, our group knows how to have a good time both on 
+                        and off the slopes.</p>
+                    <p>What sets Snowboard Scotland apart is our strong sense of community. We're more than just a group of 
+                        snowboarders - we're a family. We support and encourage each other, share tips and tricks, and forge 
+                        lasting friendships that extend beyond the mountains. No matter your age, background, or skill level, 
+                        you're always welcome to join us for unforgettable adventures and endless fun in the snowboarding world.</p>
+                    <p>So come on board, strap in your boots, and get ready to experience the thrill of snowboarding with 
+                        Snowboard Scotland!</p>
+                </div>
+               
+            </div>
+        </div>
+
+        <div style="float: right; position: relative; top: -1200px;">  <!--due to image being diffent size, the image-container class wasnt used and styled directly into HTML code-->
+            <img src="image4.jpg" alt="Station rest" style="width: 55%; height:auto;"> 
+        </div> 
+</body>
+<div class="footer"> <!-- footer class contains all the css styles for the footer, colour etc-->
+    <a href="https://www.facebook.com/groups/1102886316493959" target="_blank">Facebook</a>
+    <a href="https://twitter.com/" target="">Twitter</a>
+    <a href="https://www.instagram.com/">Instagram</a>
+</div>
+</html>

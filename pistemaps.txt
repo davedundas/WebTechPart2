@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="pistemapsstyle.css"> <!-- This is the link to the pistemapsstyles.css file-->
+</head>
+<body>
+    <header>
+        <h1>Piste Maps!</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a> <!-- navigation links-->
+        <a href="about.html">About Us</a>
+        <a href="trip.html">Trip Questionnaire</a>
+        <a href="pistemaps.html">Piste Maps</a>
+        <a href="blog.html">Blog</a>
+        <a href="tutorials.html">Tutorials</a>
+    </nav>
+
+    <div class="image-grid"> <!-- creates a 3 x 3 group formation to dispaly images-->
+        <div class="image-item"> <!-- hides any overflow of the image over the element -->
+            <img src="Alpe-d'Huez-Piste-Ski-Map-2024.jpg" alt="Alpe D'Huez" onclick="expandImage(this)"> <!-- displays the image from the img src, the Javascipt expandImage(this) function is used to expandf the image-->
+            <p>Alpe D'Huez, France</p>   
+        </div>
+        <div class="image-item">
+            <img src="BorovetsMap-2019.jpg" alt="Borovets" onclick="expandImage(this)">
+            <p>Borovets, Bulgaria</p> 
+        </div>
+        <div class="image-item">
+            <img src="Tignes-Ski-Trail-Map-2023.jpg" alt="Tignes" onclick="expandImage(this)">
+            <p>Tignes, France</p> 
+        </div>
+        <div class="image-item">
+            <img src="Three-Valleys-Pistes-Map-2024.jpg" alt="Les 3 Valles" onclick="expandImage(this)">
+            <p>Les 3 Valles, France</p> 
+        </div>
+        <div class="image-item">
+            <img src="Mayrhofen-Piste-Ski-Map-2024.jpg" alt="Mayrhofen" onclick="expandImage(this)">
+            <p>Mayrhofen, Austria</p> 
+        </div>
+        <div class="image-item">
+            <img src="Le-Grand-Massif-Ski-Trail-Map-2019.jpg" alt="Flaine" onclick="expandImage(this)">
+            <p>Flaine, France</p> 
+    </div>
+
+    <div id="imageModal" class="modal"> <!-- The Modal functions allow the images to be exanded when clicked on and closed, these are fixed sizes due to Modal being used-->
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="expandedImage" class="expanded-image">
+    </div>
+
+    <script>
+        function expandImage(img) {
+            var modal = document.getElementById("imageModal");
+            var modalImg = document.getElementById("expandedImage");
+            modal.style.display = "block";
+            modalImg.src = img.src;
+        }
+
+        function closeModal() {
+            var modal = document.getElementById("imageModal");
+            modal.style.display = "none";
+        }
+    </script>
+
+    <div style="height: 100px;"></div><!-- This controls the amount of whitespace allowed through scrolling -->
+
+</body>
+<div class="footer"> <!-- footer class contains all the css styles for the footer, colour etc-->
+    <a href="https://www.facebook.com/groups/1102886316493959" target="_blank">Facebook</a>
+    <a href="https://twitter.com/" target="_blank">Twitter</a>
+    <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+</div>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Original Webpage</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"> <!-- This is the link to the styles.css file-->
+    <link rel="stylesheet" type="text/css" href="blogstyles.css"> <!-- This is the link to the blogstyles.css file-->
+</head>
+
+<body>
+
+<header>
+    <h1>Ski Snowboard Scotland</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a> <!-- navigation links-->
+    <a href="AboutUs.html">About Us</a>
+    <a href="trip.html">Trip Questionnaire</a>
+    <a href="pistemaps.html">Piste Maps</a>
+    <a href="blog.html">Blog</a>
+    <a href="tutorials.html">Tutorials</a>
+</nav>
+
+<div class="text-container"> <!-- sets the size ofthe text container, positon and fomt etc-->
+    <div class="content"> <!-- allows the page to scroll depending on the amount of content on the page-->
+        <div class="box"> <!-- sets the colour and margin from the top of the page-->
+
+            <h2>A Week of Snowboarding Adventures: Tales from Borovets, Bulgaria</h2>
+            <p>
+                Gather 'round, fellow adventure seekers, for a tale of thrilling slopes, unexpected mishaps, and unforgettable memories. 
+                Join us as we recount the epic journey of a group of friends who embarked on a week-long snowboarding escapade to the picturesque slopes of Borovets, Bulgaria.
+            </p>
+            <p>Gather 'round, fellow adventure seekers, for a tale of thrilling slopes, unexpected mishaps, and unforgettable memories. Join us as we recount the epic 
+                journey of a group of friends who embarked on a week-long snowboarding escapade to the picturesque slopes of Borovets, Bulgaria.</p>
+        </div>
+    </div>
+</div>
+
+
+<img src="image1.jpg" alt="Image 1" width="400px" height="auto" class="rotated-image"> <!--Image which uses inline styling incorporating the "rotated-image" class-->
+
+<div class="text-container">
+    <div class="content">
+        <div class="box">
+            <p>It all began with excitement buzzing in the air as we touched down in Sofia, filled with anticipation for the snowy 
+                adventures that awaited us. However, little did we know that our journey would be sprinkled with unexpected twists and 
+                turns from the very start. Dave, our dear friend with a penchant for forgetfulness, kicked off the trip by leaving his 
+                suitcase behind at the airport. A minor setback, albeit a comical one, as we rallied together to ensure Dave had 
+                everything he needed to hit the slopes.</p>
+        </div>
+    </div>
+</div>
+
+
+    <img src="image2.jpg" alt="Image 2" width="400px" height="auto" class="rotated-image">
+
+
+<div class="text-container">
+    <div class="content">
+        <div class="box">
+            <p>As we ventured into the snowy wonderland of Borovets, adrenaline coursed through our veins with each exhilarating run 
+                down the powdery slopes. However, our excitement was tempered by an unfortunate accident that befell Don, who, 
+                in a moment of misfortune, fractured his ankle during an ambitious jump. But true to the spirit of camaraderie that 
+                bound us together, we rallied around Don, offering support and encouragement as he navigated the challenges of 
+                his injury.</p>
+        </div>
+    </div>
+</div>
+
+
+    <img src="image3.jpg" alt="Image 3" width="400px" height="auto" class="rotated-image">
+
+
+<div class="text-container">
+    <div class="content">
+        <div class="box">
+            <p>Undeterred by setbacks, we pressed on, determined to make the most of our time in this winter paradise. 
+                Alas, fate had more surprises in store for us as Sasha's son took a tumble on the slopes, resulting in a broken wrist. 
+                Though worried for his well-being, Sasha remained steadfast, showering her son with love and care as he received medical 
+                attention. Amidst the trials and tribulations, we found solace in moments of joy and laughter, none more memorable than our raucous 
+                night out in the village. With spirits high and inhibitions low, we danced under the starry skies, regaling in the joy 
+                of friendship and shared experiences. Yet, just when we thought our adventures had reached their peak, a bout of food 
+                sickness swept through our group, reminding us of the unpredictable nature of travel. But even in moments of discomfort, 
+                we found strength in each other's company, forging bonds that would last a lifetime.</p>
+        </div>
+    </div> 
+</div>
+
+
+    <img src="image5.jpg" alt="Image 5" width="400px" height="auto" class="rotated-image">
+
+
+<div class="text-container">
+    <div class="content">
+        <div class="box">
+            <p>As our week in Borovets drew to a close, we looked back on our journey with fondness and gratitude. 
+                Despite the challenges we faced along the way, our snowboarding trip had been nothing short of extraordinary—a testament 
+                to the resilience of the human spirit and the enduring power of friendship. And so, with hearts full and memories etched 
+                in our minds, we bid farewell to Borovets, knowing that our snow-capped adventures were but a prelude to the countless 
+                journeys that lay ahead. Until next time, may the slopes be steep, the snow be deep, and the camaraderie be ever-lasting</p>
+        </div>
+    </div>
+</div>
+
+<div class="footer"> <!-- footer class contains all the css styles for the footer, colour etc-->
+    <a href="https://www.facebook.com/groups/1102886316493959" target="_blank">Facebook</a>
+    <a href="https://twitter.com/" target="_blank">Twitter</a>
+    <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+</div>
+<div style="height: 100px;"></div> <!-- This controls the amount of whitespace allowed through scrolling -->
+</body>
+</html>
